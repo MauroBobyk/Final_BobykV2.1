@@ -16,7 +16,7 @@ $user->name = $request->name;
 $user->password = Hash::make($request->password);
 $user->save();  
 auth::login($user);
-return redirect(route('PanelUsuario'));
+return redirect(route('welcome'));
 }
 
 
@@ -33,16 +33,15 @@ public function login(Request $request)
 
     // Si el usuario existe lo logamos y lo llevamos a la vista de panel de clientes o pacientes
     if (Auth::attempt($credentials)) {
-        return redirect()->intended('PanelUsuario')
-            ->withSuccess('Logado Correctamente');
-    }
+        return redirect()->intended('PanelUsuario')->withSuccess('Logado Correctamente');
 
-    // Si el usuario no existe devolvemos al usuario al formulario de login
+    }
+   // Si el usuario no existe devolvemos al usuario al formulario de login
     return redirect("/");
 }
 
 public function logout (Request $request){
-    auth::logout();
+auth::logout();
 $request->session()->invalidate();
 $request->session()->regenerateToken();
 return redirect(route('welcome'));
