@@ -12,7 +12,7 @@ Route::get('/', function () {
 });
 
 Route::view('Inicio',"welcome")->name('welcome');
-
+Route::view('OpcionPacientes',"Pacientes/OpcionPacientes")->name('OpcionPacientes');
 Route::view('PanelUsuario',"PanelUsuario")->middleware('auth')->name('PanelUsuario');
 //para ver como mierda va la vista para registar
 Route::view('register',"register")->name('registro');
