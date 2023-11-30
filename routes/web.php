@@ -25,9 +25,9 @@ Route::post('/pacientes.store', [PacientesController::class, 'store'])->name('pa
 
 
 
-Route::view('PanelMedicos',"Medicos/PanelMedico")->name('PanelMedico');
+Route::view('PanelMedicos',"Medicos/PanelMedico")->middleware('auth')->name('PanelMedico');
 
-Route::view('turnos',"turnos")->name('turnos');
+Route::view('turnos',"turnos")->middleware('auth')->name('turnos');
 
 
 
