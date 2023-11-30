@@ -1,12 +1,9 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
-
-
 class LoginController extends Controller
 {
 public function register (Request $request){
@@ -22,7 +19,7 @@ return redirect(route('welcome'));
 
 public function login(Request $request)
 {
-    // Comprobamos que el email y la contraseña han sido introducidos
+    // Comprobamos que el nombre y la contraseña han sido introducidos
     $request->validate([
         'name' => 'required',
         'password' => 'required',
