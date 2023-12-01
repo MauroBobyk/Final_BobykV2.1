@@ -23,8 +23,8 @@
                      
                      <div class="d-grid gap-2">
                       <a href="{{route('PanelPacientes')}}" class="btn btn-success" tabindex="-1" role="button" aria-disabled="true">Agregar pacientes</a>
-                 {{--      <a href="{{route('PanelMedico')}}" class="btn btn-info" tabindex="-1" role="button" aria-disabled="true">Administrar medicos</a>
-                      <a href="{{route('turnos')}}" class="btn btn-danger" tabindex="-1" role="button" aria-disabled="true">Turnos</a> --}}
+               <a href="{{route('EliminarPacientes')}}" class="btn btn-info" tabindex="-1" role="button" aria-disabled="true">Eliminar pacientes</a>
+                      <a href="{{route('HistClinica')}}" class="btn btn-danger" tabindex="-1" role="button" aria-disabled="true">Historia clinica</a> 
                      
                     </div>
               <div>  <a href="{{route('PanelUsuario')}}"> <button type="button" class="btn btn-primary" style="margin-top: 1rem" >Atras</button></a></div>
