@@ -33,6 +33,7 @@
             <br>
 
             <button type="submit">Guardar</button>
+            <div>  <a href="{{route('OpcionMedico')}}"> <button type="button" class="btn btn-primary" style="margin-top: 1rem" >Atras</button></a></div>
         </form>
         </div>
       </body>
