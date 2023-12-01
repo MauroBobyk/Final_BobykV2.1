@@ -23,7 +23,7 @@
            
            <div class="d-grid gap-2">
             <a href="{{route('OpcionPacientes')}}" class="btn btn-success" tabindex="-1" role="button" aria-disabled="true">Administrar pacientes</a>
-            <a href="{{route('PanelMedico')}}" class="btn btn-info" tabindex="-1" role="button" aria-disabled="true">Administrar medicos</a>
+            <a href="{{route('OpcionMedico')}}" class="btn btn-info" tabindex="-1" role="button" aria-disabled="true">Administrar medicos</a>
             <a href="{{route('turnos')}}" class="btn btn-danger" tabindex="-1" role="button" aria-disabled="true">Turnos</a>
            
           </div>
@@ -32,22 +32,4 @@
     <div>  <a href="{{route('logout')}}"> <button type="button" class="btn btn-primary" style="margin-top: 1rem" >Salir</button></a></div>
 </div>
 </body>
-    </html>
-
-
-
-
-
-{{--     <div class="d-grid gap-2">
-        <a href="{{route('PanelPacientes')}}"> <button class="btn btn-primary" type="button" style="margin-top: 1rem">Administrar Pacientes</button></a>
-       <a href="{{route('PanelMedico')}}"> <button class="btn btn-primary" type="button" style="margin-top: 1rem">Administrar Medicos</button></a>
-         <a href="{{route('turnos')}}"> <button class="btn btn-danger" type="button" style="margin-top: 1rem">Turnos</button></a>
-      </div>
-
-      Test
- --}}
-
-
-
-
-
+</html>

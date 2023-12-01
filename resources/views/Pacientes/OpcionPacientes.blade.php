@@ -27,8 +27,6 @@
                       <a href="{{route('turnos')}}" class="btn btn-danger" tabindex="-1" role="button" aria-disabled="true">Turnos</a> --}}
                      
                     </div>
-                  
-                      
               <div>  <a href="{{route('PanelUsuario')}}"> <button type="button" class="btn btn-primary" style="margin-top: 1rem" >Atras</button></a></div>
           </div>
           </body>
